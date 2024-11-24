@@ -39,7 +39,7 @@ body {
 
 /* الخلفية والنصوص */
 .hero-section {
-    background-image: url('https://media.discordapp.net/attachments/1309902409568620725/1310132647749488680/20241024_130616.png?ex=67441b9c&is=6742ca1c&hm=e9fda118cc16046ec57bac3664c50690120f004e369bd501cc36de04942fd62f&=&format=webp&quality=lossless&width=1411&height=471'); /* ضع هنا رابط خلفيتك */
+    background-image: url('https://media.discordapp.net/attachments/1309902409568620725/1310168311014756402/IMG_1964.png?ex=67443cd3&is=6742eb53&hm=efd6dca630d15a4799035cb90b701ef0587a8fe7bba9de8f2ea6dc12312ee528&=&format=webp&quality=lossless&width=708&height=525'); /* ضع هنا رابط خلفيتك */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -95,6 +95,20 @@ body {
     font-size: 1.2em;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-bottom: 5px; /* تقليص المسافة السفلية تحت الزر */
+}
+
+.hero-section .btn:hover {
+    background-color: #ff6200;
+}
+
+.hero-section .btn:hover {
+    background-color: #ff6200;
+}
+
+
+.hero-section .btn:hover {
+    background-color: #ff6200;
 }
 
 .hero-section .btn:hover {
@@ -159,24 +173,12 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    opacity: 0; /* لجعل المربعات مخفية في البداية */
+    transform: translateY(50px); /* لإضافة حركة تحرك المربع من الأسفل */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* التأثير عند الحركة */
 }
 
-.feature-box .icon {
-    font-size: 3em;
-    margin-bottom: 15px;
-}
-
-.feature-box h3 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.feature-box p {
-    font-size: 1em;
-    color: #ccc;
-}
-
-/* تأثير تحريك المربعات عند التمرير */
+/* تأثير الحركة عند التمرير */
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -189,16 +191,9 @@ body {
 }
 
 /* إضافة التأثير */
-.feature-box h3, .feature-box p {
-    animation: slideIn 1s ease-out forwards;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1s ease-out;
-}
-
-.feature-box:hover h3, .feature-box:hover p {
+.feature-box.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* عند ظهور المربع يتحرك للأعلى */
 }
 
 /* تخصيص المربعات لأجهزة الجوال */
@@ -208,3 +203,5 @@ body {
         border: 2px solid rgba(255, 255, 255, 0.3); /* زيادة وضوح الإطار */
     }
 }
+
+/* مراقبة التمرير باستخدام Intersection Observer */
