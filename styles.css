@@ -39,7 +39,7 @@ body {
 
 /* الخلفية والنصوص */
 .hero-section {
-    background-image: url('https://media.discordapp.net/attachments/1309902409568620725/1310168311014756402/IMG_1964.png?ex=67443cd3&is=6742eb53&hm=efd6dca630d15a4799035cb90b701ef0587a8fe7bba9de8f2ea6dc12312ee528&=&format=webp&quality=lossless&width=708&height=525'); /* ضع هنا رابط خلفيتك */
+    background-image: url('https://media.discordapp.net/attachments/1309902409568620725/1310132647749488680/20241024_130616.png?ex=67441b9c&is=6742ca1c&hm=e9fda118cc16046ec57bac3664c50690120f004e369bd501cc36de04942fd62f&=&format=webp&quality=lossless&width=1411&height=471'); /* ضع هنا رابط خلفيتك */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -53,13 +53,15 @@ body {
 /* محتوى البلوكات */
 .hero-section .content {
     position: absolute;
-    top: 10%; /* نقل النصوص إلى الأعلى */
-    left: 20px; /* محاذاة النص لليسار */
+    bottom: 20%; /* يمكنك تقليص أو إزالة هذه القيمة حسب الحاجة */
+    left: 20px;
     color: white;
     font-family: 'Arial', sans-serif;
     text-align: left;
     max-width: 80%;
+    margin-bottom: 0; /* إزالة المسافة السفلية */
 }
+
 
 /* تنسيق النصوص */
 .hero-section p {
