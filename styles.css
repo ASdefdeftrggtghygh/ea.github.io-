@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: flex-start; /* جعل المحتوى على اليسار */
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #111;
 }
 
@@ -63,26 +63,26 @@ body {
 
 /* تنسيق النصوص */
 .hero-section p {
-    font-size: 2em; /* تكبير النص */
+    font-size: 1.5em; /* تقليص النص */
     font-weight: 400;
     letter-spacing: 1px;
 }
 
 .hero-section h1 {
-    font-size: 5em; /* تكبير الخط */
+    font-size: 3.5em; /* تقليص حجم الخط */
     font-family: 'Chakra Petch', sans-serif;
     margin-bottom: 10px;
     line-height: 1;
 }
 
 .hero-section h1.rp {
-    font-size: 4em; /* تكبير الخط */
+    font-size: 3em; /* تقليص الخط */
     color: #ff6200;
     margin-top: 0;
 }
 
 .hero-section h2 {
-    font-size: 3em; /* تكبير الخط */
+    font-size: 2.5em; /* تقليص حجم الخط */
     margin-bottom: 20px;
     font-weight: 300;
 }
@@ -90,9 +90,9 @@ body {
 .hero-section .btn {
     background-color: #ff6200;
     color: #fff;
-    padding: 20px 40px; /* تكبير الزر */
+    padding: 15px 30px; /* تقليص الزر */
     text-decoration: none;
-    font-size: 1.5em; /* تكبير النص داخل الزر */
+    font-size: 1.2em; /* تقليص النص داخل الزر */
     border-radius: 10px;
     transition: background-color 0.3s;
     margin-bottom: 0; /* إزالة المسافة تحت الزر */
@@ -107,24 +107,24 @@ body {
     .hero-section .content {
         top: 10%; /* وضع النصوص في الأعلى */
         left: 10px; /* تقليص المسافة من اليسار */
-        font-size: 1.5em; /* تكبير النصوص */
+        font-size: 1.2em; /* تقليص النصوص */
     }
 
     .hero-section h1 {
-        font-size: 4em; /* تكبير الخط */
+        font-size: 3em; /* تقليص الخط */
     }
 
     .hero-section h2 {
-        font-size: 2.5em; /* تكبير الخط */
+        font-size: 2em; /* تقليص الخط */
     }
 
     .hero-section p {
-        font-size: 1.5em; /* تكبير النص */
+        font-size: 1.2em; /* تقليص النص */
     }
 
     .hero-section .btn {
-        font-size: 1.5em; /* تكبير الزر */
-        padding: 15px 30px; /* تكبير الزر */
+        font-size: 1.2em; /* تقليص الزر */
+        padding: 12px 25px; /* تقليص الزر */
         margin-bottom: 0; /* إزالة المسافة تحت الزر في الجوال */
     }
 }
@@ -141,7 +141,7 @@ body {
 }
 
 .section-title {
-    font-size: 3.5em; /* تكبير النص */
+    font-size: 2.5em; /* تقليص النص */
     margin-bottom: 30px;
 }
 
@@ -150,12 +150,12 @@ body {
     background-color: #121212; /* نفس الخلفية للمربعات الحالية */
     border: 2px solid rgba(255, 255, 255, 0.2); /* إطار شفاف */
     border-radius: 15px; /* تكبير الحواف */
-    padding: 30px; /* تكبير الحشو */
-    margin: 25px 0; /* تقليل المسافة بين المربعات */
+    padding: 20px; /* تقليص الحشو */
+    margin: 20px 0; /* تقليل المسافة بين المربعات */
     color: #fff;
     text-align: center;
-    width: 75%; /* زيادة عرض المربعات */
-    max-width: 550px; /* زيادة الحد الأقصى للعرض */
+    width: 70%; /* تقليل عرض المربعات */
+    max-width: 450px; /* تقليل الحد الأقصى للعرض */
     display: flex;
     flex-direction: column;
     align-items: center;
